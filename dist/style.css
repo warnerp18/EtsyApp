@@ -2,12 +2,32 @@
 	box-sizing: border-box;
 }
 
-.item {
-	padding: 2em 1.5em;
+.grid {
+	display: block;
+	font-size: 0;
+	text-align: justify;
+	margin: 0 auto;
 }
 
-@media (min-width: 400px) {
-	.grid-2-400 > * {min-width: 47%; }
+.grid:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+.grid > * {
+	display: inline-block;
+	width: 100%;
+	font-size: medium;
+	vertical-align: top;
+	text-align: left;
+	margin: 1em;
+	padding: 1em; 
+	border: .2em solid gray;
+	height: 500px
+}
+@media (min-width: 600px) {
+	.grid-2-300 > * {width: 44%; }
 }
 
 @media (min-width: 800px){
@@ -16,4 +36,5 @@
 
 img {
 	max-width: 100%;
+	max-height: 65%;
 }
