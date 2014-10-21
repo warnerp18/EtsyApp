@@ -1,0 +1,19 @@
+*,  *:before, *:after {
+	box-sizing: border-box;
+}
+
+.item {
+	padding: 2em 1.5em;
+}
+
+@media (min-width: 400px) {
+	.grid-2-400 > * {min-width: 47%; }
+}
+
+@media (min-width: 800px){
+	.grid-3-800 > * { width: 30%; }
+}
+
+img {
+	max-width: 100%;
+}
