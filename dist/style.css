@@ -1,40 +1,142 @@
-*,  *:before, *:after {
-	box-sizing: border-box;
+*, *:before, *:after {
+    box-sizing: border-box;
 }
-
 .grid {
-	display: block;
-	font-size: 0;
-	text-align: justify;
-	margin: 0 auto;
+    display: block;
+    font-size: 0;
+    text-align: justify;
+    margin: 0 auto;
 }
-
 .grid:after {
-	content: "";
-	display: inline-block;
-	width: 100%;
+    content: "";
+    display: inline-block;
+    width: 100%;
 }
-
 .grid > * {
-	display: inline-block;
-	width: 100%;
-	font-size: medium;
-	vertical-align: top;
-	text-align: left;
-	margin: 1em;
-	padding: 1em; 
-	border: .2em solid gray;
-	height: 500px
+    display: inline-block;
+    width: 100%;
+    font-size: medium;
+    vertical-align: -webkit-baseline-middle;
+    text-align: left;
+    margin: 1em;
+    padding: .5em;
+    border: .1em solid gray;
+    min-height: 300px;
+    color: cornflowerblue;
+    text-overflow: ellipsis;
+    text-align: center;
+    text-decoration: blink;
 }
+
 @media (min-width: 600px) {
-	.grid-2-300 > * {width: 44%; }
+    .grid-2-300 > * {
+        width: 44%;
+        -webkit-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+    }
 }
-
-@media (min-width: 800px){
-	.grid-3-800 > * { width: 30%; }
+@media (min-width: 800px) {
+    .grid-3-800 > * {
+        width: 30%;
+        -webkit-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+    }
 }
-
 img {
-	max-width: 100%;
-	max-height: 65%;
+    max-width: 100%;
+    max-height: 65%;
 }
+h6, .zeta {
+    font-size: 14px;
+    margin-bottom: 29.7px;
+    margin-bottom: .5em;
+    color: darkslategray;
+    text-align: center;
+    text-decoration: blink;
+}
+p {
+    margin: auto auto -0.5em;
+    text-align: right;
+}
+
+ul {
+	text-align: right;
+	padding-bottom: .4em;
+	border-bottom: .1em solid gray;
+}
+li {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	margin-right: .5em;
+	padding-right: .5em;
+}
+
+.grid:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    margin-top: 65px;
+}
+
+a:link {
+    color: gray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+
+}
+
+a:hover, .fa{
+    color: black;
+}
+
+.top {
+	position: fixed;
+	display: block;
+	width: 100%;
+	background-color: mintcream;
+	height:55px;
+
+}
+
+.nav {
+	border-right: .1em solid gray;
+	opacity: .5;
+}
+
+.fa {
+	position: absolute;
+	top: 4px;
+}
+
+.fa-home {
+	right: 229px;
+	position: absolute;
+}
+
+.fa-heart {
+	right: 153px;
+	position: absolute;
+}
+
+.fa-user {
+	right: 79px;
+	position: absolute;
+}
+
+.fa-shopping-cart {
+	right: 24px;
+	position: absolute;
+}
+
+
+
+
+
+
+
+

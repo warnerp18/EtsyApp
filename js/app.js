@@ -15,7 +15,7 @@ function app() {
         _.templateSettings.interpolate = /{([\s\S]+?)}/g;
 
         var options = {
-            api_key: "aavnvygu0h5r52qes74x9zvo"
+            api_key: "e5akcrosbhe7wyu22vdfda2b"
         }
         // start app?
         var client = new EtsyClient(options);
